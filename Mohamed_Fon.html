@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>SAMA FON mobiel servers </title>
+    <style>
+    
+  *{
+      padding: 0;
+      margin: 0;
+  }  
+ body{
+     height: 1100px;
+     width: 100%;
+     background: rgba(200,200,200,0.5);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ } 
+    .contener{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 90%;
+        width:90%;
+        background: rgba(200,200,200,0.2);
+        overflow: hidden;
+        border-radius: 20px;
+        animation: v 5s;
+    }
+ @keyframes v{
+   
+   0%{
+     transform: rotateX(90deg);  
+   }  
+     
+   
+   100%{
+  transform: rotate(0deg);     
+   }  
+  
+     
+ }   
+    
+    
+    
+    
+.heart {
+    width: 100%;
+    height: 250px;
+    margin: 20px 0px;
+    background-color: rgba(200,90,0,0.4);
+    clip-path: polygon(30% 50% 5px );
+    animation: heartbeat 1s infinite;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.heart ul{
+    list-style: none;
+}
+.heart h1{
+        color: rgba(255,100,255,0.9);
+        font-size: 21px;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 1px gold;
+    }
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}    
+ .box1{
+     
+   display: flex;  
+   flex-direction: column;
+  padding: 20px 20px;   
+ }   
+    .box1_text{
+        padding: 20px 20px;
+        border-radius: 20px;
+    }.
+    .box1_ul ul{
+        list-style: none;
+    }
+    .box1_text ul li {
+        padding: 10px 0px ;
+        margin: 10px 0px;
+    }
+    .box1_text ul li a{
+        color: rgba(0,0,220,0.4);
+        letter-spacing: 3px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background: rgba(255,0,255,0.2);
+    }
+.box1_menuo{
+    height: 190px;
+    background: rgba(0,200,0,0.1);
+    padding: 10px 0px;
+    border-radius: 20px;
+    border: 2px solid rgba(0,220,0,0.4);
+}
+.box1_menuo ul{
+    list-style: none;
+}
+.box1_menuo ul li{
+    margin: 10px 0px;
+    color: orange;
+    font-weight: 800;
+    border-bottom: 2px solid rgba(200,200,90,0.5);
+    padding: 10px 0px;
+    text-shadow: 1px 1px 1px white;
+}
+.box2{
+    height: 360px;
+    width: 100%;
+    
+    margin: 20px 0px;
+     background-image: url('/storage/emulated/0/Tm/wats.jpg');
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     border-radius:5%;
+}
+.box3{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box3 p{
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+.box3 p i{
+    font-size: 20px;
+    padding: 0px 10px;
+}
+h5{
+    margin: 30px 0px;
+    padding: 7px 0px;
+    text-shadow: 1px 1px 1px green;
+    border-bottom:2px solid rgba(200,200,100,0.5) ;
+    letter-spacing: 2px;
+}
+    </style>
+</head>
+<body>
+    <div class="contener" >
+        <div class="box1">
+            
+            
+            <div class="box1_text">
+    <div class="heart" id="heart">
+ <h1>mohamed_fon.com</h1>
+                <ul>
+                    <li><a href="https://www.facebook.com/share/1JS7DtRgCj/">facebook_link</a></li>
+                    <li><a onclick="demo()" href="#">watsapp_FON</a></li>
+                    <h5>For all mobile services</h5>
+                    
+                    
+             
+    </div>
+        </div>
+            <div class="box1_menuo">
+                <ul>
+                    
+                    <li>iPhone</li>
+                    <li>Samsung</li>
+                    <li>Huawei</li>
+                    <li>Oppo</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box2">
+        </div>
+        <div class="box3">
+<p><i class="fa-solid fa-phone"></i>
+tel : +201062136400
+</p>
+<p><i class="fa-solid fa-location-dot"></i>
+الشرقيه / فاقوس
+</p>
+
+</div>
+        </div>
+    </div>
+    <script>
+    
+    
+ function demo(){
+     alert('+201062136400')
+ }   
+    
+    
+    
+    
+    
+const heart = document.getElementById("heart");
+heart.addEventListener("click", () => {
+    const currentAnimation = getComputedStyle(heart).animation;
+    if (currentAnimation.includes("heartbeat")) {
+        heart.style.animation = "none";
+        setTimeout(() => {
+            heart.style.animation = "heartbeat 1s infinite";
+        }, 100);
+    }
+});
+    </script>
+</body>
+</html>
